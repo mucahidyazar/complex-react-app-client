@@ -26,10 +26,7 @@ export default function Chat() {
   }, [isChatOpen]);
 
   useEffect(() => {
-    socket.current = io(
-      "https://complex-react-app-server.herokuapp.com" ||
-        "http://localhost:8080"
-    );
+    socket.current = io("https://complex-react-app-server.herokuapp.com");
 
     socket.current.on("chatFromServer", (message) => {
       setState((draft) => {

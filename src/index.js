@@ -25,7 +25,7 @@ import DispatchContext from "./DispatchContext";
 import axios from "axios";
 import { useEffect } from "react";
 import LoadingDotIcon from "./components/LoadingDotIcon";
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://complex-react-app-server.herokuapp.com";
 
 const CreatePost = React.lazy(() => import("./components/CreatePost"));
 const ViewSinglePost = React.lazy(() => import("./components/ViewSinglePost"));
